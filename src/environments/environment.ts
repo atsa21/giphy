@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyCyffvdLYUV5aWx1Jj_Inz08T4fwnvXmtU",
+    authDomain: "angular-giphy.firebaseapp.com",
+    projectId: "angular-giphy",
+    storageBucket: "angular-giphy.appspot.com",
+    messagingSenderId: "533784318407",
+    appId: "1:533784318407:web:83e870e4fac95bde2ac9e2",
+}
 };
 
 /*

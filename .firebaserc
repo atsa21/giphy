@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "angular-giphy"
+  },
+  "targets": {
+    "angular-giphy": {
+      "hosting": {
+        "giphy": [
+          "angular-giphy"
+        ]
+      }
+    }
+  }
+}
