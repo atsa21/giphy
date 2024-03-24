@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
   giphi: {
-    url: 'http://api.giphy.com/v1/gifs/',
+    url: 'https://api.giphy.com/v1/gifs',
     key: 'l11hOyHHFR5c0x5344quNt79SPcaqSpp',
   },
   firebase: {

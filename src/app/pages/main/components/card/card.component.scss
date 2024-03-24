@@ -12,7 +12,7 @@
 
     & .title,
     & .date {
-      background: $white;
+      opacity: 0;
     }
   }
 
@@ -20,7 +20,8 @@
   & .date {
     position: absolute;
     padding: 8px;
-    background: rgba($color: $white, $alpha: .7);
+    font-size: 12px;
+    background: rgba($color: $white, $alpha: .8);
     transition: all 0.3s ease-in-out;
   }
 
