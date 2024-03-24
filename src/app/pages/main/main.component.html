@@ -1,0 +1,25 @@
+<div class="page-container">
+  <div class="page-box">
+    <app-search-input [searchControl]="searchControl"></app-search-input>
+    <div *ngIf="gifs; else loading" class="cards-container">
+      <div
+        *ngIf="gifs.pagination.total_count; else notFound"
+        class="cards"
+      >
+        <app-card *ngFor="let gif of gifs.data" [gifCard]="gif" class="card"></app-card>
+      </div>
+      <app-paginator [pageIndex]="pageIndex" [totalItems]="gifs.pagination.total_count" (pageChange)="pageChange($event)"></app-paginator>
+    </div>
+  
+    <ng-template #notFound>
+      <div class="not-found">
+        <h1>No results found for "{{ searchControl.value }}"</h1>
+        <p>Please try search again using different words</p>
+      </div>
+    </ng-template>
+  
+    <ng-template #loading>
+      <app-loader></app-loader>
+    </ng-template>
+  </div>
+</div>

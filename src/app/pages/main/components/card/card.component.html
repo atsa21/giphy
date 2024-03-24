@@ -1,0 +1,5 @@
+<div *ngIf="gifCard" class="card-container" (click)="openGifDialog()">
+  <p class="title">{{ gifCard.title }}</p>
+  <img class="image" [src]="gifCard.images.preview_gif.url" [alt]="gifCard.title"/>
+  <p class="date">{{ gifCard.import_datetime | date }}</p>
+</div>

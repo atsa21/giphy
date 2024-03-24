@@ -1,0 +1,13 @@
+@import './colors.scss';
+
+.mat-snack-bar-container {
+  font-weight: 500;
+  box-shadow: none;
+}
+
+.mat-snack-bar-container.error-snackbar {
+  color: $warning;
+  background: $warning-light;
+  border: 1px solid $warning;
+  border-radius: 6px;
+}

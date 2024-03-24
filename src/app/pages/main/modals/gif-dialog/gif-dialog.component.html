@@ -1,0 +1,8 @@
+<div class="gif-container">
+  <h1 class="title">{{ gifData.title }}</h1>
+  <video [height]="gifData.images.original.height" [width]="gifData.images.original.width" autoplay loop muted>
+    <source [src]="gifData.images.original.mp4" type="video/mp4" />
+    <source [src]="gifData.images.original.webp" type="video/webp" />
+  </video>
+  <p class="date">{{ gifData.import_datetime | date }}</p>
+</div>

@@ -1,0 +1,43 @@
+@import "src/assets/styles/colors";
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  &:hover {
+    cursor: pointer;
+
+    & .title,
+    & .date {
+      background: $white;
+    }
+  }
+
+  & .title,
+  & .date {
+    position: absolute;
+    padding: 8px;
+    background: rgba($color: $white, $alpha: .7);
+    transition: all 0.3s ease-in-out;
+  }
+
+  & .title {
+    top: 16px;
+    left: 0;
+  }
+
+  & .date {
+    bottom: 16px;
+    right: 0;
+  }
+
+  & .image {
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+}

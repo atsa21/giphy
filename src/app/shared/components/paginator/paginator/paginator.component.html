@@ -1,0 +1,10 @@
+<div *ngIf="totalItems" class="paginator">
+  <mat-paginator
+    color="accent"
+    [length]="totalItems"
+    [pageSize]="pageSize"
+    [pageIndex]="pageIndex"
+    aria-label="Select page of gif"
+    (page)="pageChanged($event)"
+  ></mat-paginator>
+</div>
