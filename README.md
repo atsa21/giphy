@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.11.
 
+## Site
+
+Navigate to [Giphy App](https://angular-giphy.web.app/) to see deployed app.
+![image](https://github.com/atsa21/giphy/assets/104850911/0e25a872-4371-494f-9b4c-4c0680a86b9f)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
